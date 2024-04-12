@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h1>PACMANS</h1>
+<h2>Protease-ase Cleavages from MEROPS Analyzed Specificities</h2>
+
+
+<img src="ProteaseAseSchematic.jpg" alt="Protease-ase Schematic" style="width:534px;height:360px;">
+<br><br>
+	
+ <div class="panel-body"> 
+	               <p> This work has been published by <a href="http://onlinelibrary.wiley.com/doi/10.1002/pro.3113/abstract" target="_blank">Ferrall-Fairbanks et al in Protein Science.</a><p>
+                <h3>Usage Instructions:</h3>
+                <ol>
+                    <li>
+                        Choose a Protease-ase name and substrate name. These names are used to name the output file.
+                    </li>
+                    <li>[Optional] Choose a pocket size. Defaults are 1-8.</li>
+                    <li>Navigate to <a href="http://merops.sanger.ac.uk/" target="_blank">MEROPS</a> and choose a protease-ase that has a specificity matrix and copy the link to that page. </li>
+					<p style="margin-left:2%; margin-right:2%;">As an example, find the link to the specificity matrix of cathepsin S: <font color="blue">https://www.ebi.ac.uk/merops/cgi-bin/pepsum?id=C01.034;type=P</font></p>
+                    <li>Enter the amino acid sequence of the substrate. This sequence must be in FASTA format without any spaces.</li>
+<li>                        These sequences can be obtained from <a href="http://www.uniprot.org/" target="_blank">Uniprot</a> or <a href="https://www.ncbi.nlm.nih.gov/protein/" target="_blank"> Pubmed Protein </a>. </li>
+					<p style="margin-left:2%; margin-right:2%;"> As an example to test, use the sequence for cathepsin K: <font color="blue"> <br>
+MWGLKVLLLPVVSFALYPEEILDTHWELWKKTHRKQYNNKVDEISRRLIWEKNLKYISIHNLEASLGVHTYELAMN <Br>
+HLGDMTSEEVVQKMTGLKVPLSHSRSNDTLYIPEWEGRAPDSVDYRKKGYVTPVKNQGQCGSCWAFSSVGALEGQL <br> 
+KKKTGKLLNLSPQNLVDCVSENDGCGGGYMTNAFQYVQKNRGIDSEDAYPYVGQEESCMYNPTGKAAKCRGYREIP <br>
+EGNEKALKRAVARVGPVSVAIDASLTSFQFYSKGVYYDESCNSDNLNHAVLAVGYGIQKGNKHWIIKNSWGENWGN <Br>
+KGYILMARNKNNACGIANLASFPKM</font></p>
+				<li>  Copy and paste your selected sequence or this example sequence into the indicated text box below </li>
+                </ol>
+                <p></p>
+                <p></p>
+        </div>
+<form action="analyze.php" method="get" autocomplete="on">
+
+	<fieldset>
+		<legend><p style="font-size:140%;"><b>Protease-ase</b></p></legend>
+		Name:<br>
+		<input type="text" name="proase" placeholder="ex: catS" required><br>
+		MEROPS link:<br>
+		<input type="url" name="url" placeholder="httpp://merops.sanger.ac.uk/url" size="50" required>
+	</fieldset>
+	<br>
+	<fieldset>
+		<legend><p style="font-size:140%;"><b>Substrate Protease</b></p></legend>
+		Name:<br>
+		<input type="text" name="subpro" placeholder="ex: catK" required><br>
+		Amino acid sequence:<br>
+		<input type="text" name="sequence" placeholder="AAAAAAAA" size="100" required>
+	</fieldset>
+	<!--
+	<br>
+	<fieldset>
+		<legend><p style="font-size:140%;"><b>Pocket Size</b></p></legend>
+		This feature allows users to select a smaller subsection and look at the specificity of the active site pocket and its nearest neighbors only. The S4 on the protease-ase in the diagram corresponds to a bound of 1 and S4' corresponds to a bound of 8.  Pocket size must be between 2 and 8.<br><br>
+		Lower bound:<br>
+		<input type="number" name="startp" min="1" max="7" step="1" value="1" size="4" required><br>
+		Upper bound:<br>
+		<input type="number" name="endp" min="2" max="8" step="1" value="8" size="4" required><br>
+	</fieldset>
+	-->
+	<br>
+	<input type="submit" value="Submit" style="width:100px;height:30px;">
+
+</form>
+
+</div>		<!--Footer-->
+
+</body>
+
+</html>

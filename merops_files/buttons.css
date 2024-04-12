@@ -1,0 +1,104 @@
+  .button {
+    margin:0.3em;
+    padding:0.3em 1em;
+    color:#fff;
+    background:#000;
+    text-decoration:none;
+    text-align:center;
+    font-weight:bold;
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #666;
+    border-left:1px solid #ccc;
+    border-right:1px solid #666;
+    width:10em;
+    display:block;
+    float:left;
+  }
+  .buttons b {
+    display: inline;
+    float: left;
+    }
+  .buttons p {
+    display: block;
+    padding: 0 0 0 13em;
+    margin: 0;
+  }
+  .buttons {
+    float: left;
+    width: 100%;
+  }
+  .absolute .buttons {
+    float:left;
+    width:100%;
+    clear: both;
+  }
+  .line {
+    clear: both;
+    display: block;
+    position: relative;
+  }
+
+  .summary {
+    background:#008000;
+  }
+
+  .holotype {
+    background: darkseagreen;
+  }  
+
+  .alignment {
+    background:#4169e1;
+  }
+
+  .tree {
+    background:#a52a2a;
+  }
+
+  .genomes {
+    background: purple;
+  }  
+
+  .sequence {
+    background:#4682b4;
+  }
+
+  .features {
+    background: cyan;
+    color:#000;
+  }
+
+  .distribution {
+    background:#800080; 
+  }
+
+  .literature {
+    background:#ffd700;
+    color:#000;
+  }
+
+  .human_est {
+    background:indianred;
+  }
+  .mouse_est {
+    background:#9b8171;  
+  }
+
+  .substrates {
+    background:#8fbc8f;
+  }
+
+  .inhibit {
+    background:#ccc;
+  }
+
+  .pharma {
+    background:#fc9;
+  }
+
+  .architecture {
+    background:#008; 
+  }
+
+  .gene_structure {
+    background: #ccc; 
+  }

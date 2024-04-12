@@ -1,0 +1,135 @@
+.sequences {
+  color: #0000a0;
+  font-family: "Courier New", monospace;
+  font-size: 10pt;
+  font-style: normal;
+  font-weight: normal;
+  display: inline;
+  width: '90%';
+}
+
+span.peptidase, span.inhibitor, span.interupting {
+  color: #a00000;
+}
+
+.active_site {	
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+
+.metal_ligand	{  
+  background-color: cyan;
+  color: navy;
+  text-align: center;
+}
+
+
+.replacement	{  
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.S1 {
+  background-color: purple;
+  color: black;
+  text-align: center;
+}
+
+.S2 {
+  background-color: pink;
+  color: black;
+  text-align: center;
+}
+
+.S3 {
+  background-color: orange;
+  color: black;
+  text-align: center;
+}
+
+.S4 {
+  background-color: purple;
+  color: black;
+  text-align: center;
+}
+.S1prime {
+  background-color: green;
+  color: black;
+  text-align: center;
+}
+.S2prime {
+  background-color: purple;
+  color: black;
+  text-align: center;
+}
+.S3prime {
+  background-color: purple;
+  color: black;
+  text-align: center;
+}
+.S4prime {
+  background-color: purple;
+  color: black;
+  text-align: center;
+}
+.disulphide {
+  background-color: yellow;
+  color: black;
+  text-align: center;
+}
+
+.carbohydrate {
+  background-color: burlywood;
+  text-align: center;
+}
+
+.transmembrane {
+  background-color: grey;
+  text-align: center;
+}
+
+.icleavage {
+  background-color: pink;
+  color: black;
+  text-align: center;
+}
+
+.acleavage {
+  background-color: orange;
+  color: black;
+  text-align: center;
+}
+
+.xcleavage	{  
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+PRE EM, p.em {
+  background-color: lightgreen;
+  font-style: normal;
+}
+
+/* for Clan alignments: u, tt, u tt */
+pre u {
+  background-color: red;
+  color: white;
+  text-decoration: none;
+}
+
+pre tt {
+  background-color: cyan;
+  text-decoration: none;
+}
+
+pre u tt {
+  background-color: burlywood;
+  text-decoration: none;
+  }
+
+p.strong, pre b {
+  background-color: #FFCC99;
+}

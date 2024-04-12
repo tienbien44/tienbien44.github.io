@@ -1,0 +1,45 @@
+/* this file contains functions used on the merops website */
+
+function inline_urls() {
+  $("body").append('<div id="popup"></div><div id="mask"></div>');
+
+  $("#mask").click(function () {
+    $(this).hide();
+    $("#popup").hide();
+  });                       
+
+  $('.inline').each(function(){
+    $(this).click(function (e) {
+      var link = $(this).attr('href');
+      $.get(link,function(data) {
+        $("#popup").empty();
+        $("#popup").append('<div id="close_container"><a id="close" href="">x</a></div>');
+        $("#popup").append($(data).filter('.ajax'));
+
+        $("#popup").show();
+        $("#mask").show();
+
+        var h = $("#popup").height()/2;
+        $("#popup").css('margin-top' , '-'+ h +'px');
+
+
+        $("#close").click(function (e) {
+          $("#popup").hide();
+          $("#mask").hide(); 
+          e.preventDefault();
+        });
+
+      }); 
+      e.preventDefault(); 
+    }); 
+  });
+};
+
+function oW(URL) {
+  aWindow=window.open(URL,'theWindow','width=800,height=400,menubar=yes,status=yes,toolbar=yes,location=yes,scrollbars=yes,resizable=yes');
+//  aWindow=window.open(URL,'theWindow','width=800,height=400,menubar=no,status=no,toolbar=no,location=no,scrollbars=yes,resizable=yes');
+  aWindow.focus();
+  }
+
+
+
